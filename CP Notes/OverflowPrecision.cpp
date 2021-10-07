@@ -25,24 +25,18 @@ cout<<c<<" "<<d<<endl;
 //overflow
 
 int p = INT_MAX;
-cout<<p+1; //An exapmle of overflow
+cout<<"An exapmle of overflow "<<p+1<<endl; //An exapmle of overflow
 
 //Long long is way better than double, double although can store more than long long but in exchange it will cost you your precision. warna we can simply use cout<<fixed(no scientific notation)<<setprecision(0){removes decimal}<<variable to give value same form as long long
-}
 
 
-/* A question where the answer came wrong coz of overflow!!
-#include <bits/stdc++.h>
-using namespace std;
-
-int main()
-{
+//A question where the answer came wrong coz of overflow!!
     int t,n;
     cin>>t;
     while (t--)
     {
         cin>>n;
-        long long pdt=1,temp; => ⚠️Yaha pe before i used int, then made it long long
+        long long pdt=1,temp; //⚠️Here, before i used int and got wrong answer, then made it long long
         for (int i = 0; i < n; i++)
         {
             cin>>temp;
@@ -55,4 +49,4 @@ int main()
     }
     
 }
-*/
+
